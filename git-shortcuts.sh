@@ -2,7 +2,7 @@ alias gs='git status'
 alias gaa='git add -A'
 alias gdiff='git diff --color-words'
 alias gclean='git gc --prune=now && git remote prune origin'
-alias glog='git log --graph --oneline --all --decorate'
+alias glog='git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative'
 
 if type git-up -t > /dev/null 2>&1; then
 	alias gup='git-up'
