@@ -19,13 +19,13 @@ Works on OSX, Linux & Windows git-bash.
 Trial it in your current terminal session:
 
 ```
-eval "$(curl -L https://raw.github.com/benseven/git-convenience-no-rebase/master/setup.sh) trial"
+eval "$(curl -L https://raw.githubusercontent.com/benseven/git-convenience-no-rebase/master/setup.sh) trial"
 ```
 
 If it works for you, have it in all your terminals:
 
 ```
-eval "$(curl -L https://raw.github.com/benseven/git-convenience-no-rebase/master/setup.sh)"
+eval "$(curl -L https://raw.githubusercontent.com/benseven/git-convenience-no-rebase/master/setup.sh)"
 ```
 
 ## Shortcuts
