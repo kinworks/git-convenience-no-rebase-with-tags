@@ -6,10 +6,10 @@ alias glog='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset
 
 if type git-up -t > /dev/null 2>&1; then
 	alias gup='git-up'
-	alias gp='git-up && git push'
+	alias gp='git-up && git fetch --tags && git push && git push --tags'
 else
 	alias gup='git pull'
-	alias gp='gup && git push'	
+	alias gp='gup && git fetch --tags && git push && git push --tags'	
 fi
 
 function gc {
@@ -33,7 +33,7 @@ gs - git status
 gaa - git add --all - Add all changes (including untracto staging)
 gc "Message" - Commit all changes (except untracked) message
 goops - Add changes to previous commit & edit comessage
-gp - Pull then push - (does not use --rebase)
+gp - Pull then push - (does not use --rebase, also fetches tags, also pushes tags)
 gup - Pull (not via --rebase)
 glog - Decorated & graphed log
 gdiff - A word-diff of changes
