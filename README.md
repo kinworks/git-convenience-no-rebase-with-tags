@@ -19,13 +19,13 @@ Works on OSX, Linux & Windows git-bash.
 Trial it in your current terminal session:
 
 ```
-eval "$(curl -L https://raw.githubusercontent.com/benseven/git-convenience-no-rebase/master/setup.sh) trial"
+eval "$(curl -L https://raw.githubusercontent.com/kinworks/git-convenience-no-rebase-with-tags/master/setup.sh) trial"
 ```
 
 If it works for you, have it in all your terminals:
 
 ```
-eval "$(curl -L https://raw.githubusercontent.com/benseven/git-convenience-no-rebase/master/setup.sh)"
+eval "$(curl -L https://raw.githubusercontent.com/kinworks/git-convenience-no-rebase-with-tags/master/setup.sh)"
 ```
 
 ## Shortcuts
@@ -35,7 +35,7 @@ eval "$(curl -L https://raw.githubusercontent.com/benseven/git-convenience-no-re
 * `gaa` - git add --all - Add all changes (including untracto staging</dd>
 * `gc "Message"` - Commit all changes (except untracked) message</dd>
 * `goops` - Add changes to previous commit &amp; edit comessage</dd>
-* `gp` - Pull then push - does not use --rebase (read 'About this fork')
+* `gp` - Pull then push - does not use --rebase and fetches / pushes tags too (read 'About this fork')
 * `gup` - Pull (not via --rebase - see 'About this fork')
 * `glog` - Decorated &amp; graphed log
 * `gdiff` - A word-diff of changes
