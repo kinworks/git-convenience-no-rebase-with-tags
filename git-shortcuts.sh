@@ -3,13 +3,15 @@ alias gaa='git add -A'
 alias gdiff='git diff --color-words'
 alias gclean='git gc --prune=now && git remote prune origin'
 alias glog='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
+alias glogshort='git log --no-merges --max-count=7 --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
+
 
 if type git-up -t > /dev/null 2>&1; then
 	alias gup='git-up'
 	alias gp='git-up && git fetch --tags && git push && git push --tags'
 else
 	alias gup='git pull'
-	alias gp='gup && git fetch --tags && git push && git push --tags'	
+	alias gp='gup && git fetch --tags && git push && git push --tags && glogshort'	
 fi
 
 function gc {

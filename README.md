@@ -2,6 +2,8 @@
 
 This is Jake Archibald's (@jaffathecake) Git Convenience, with one simple change: n00bs, and others, might not want Git Pull to use --rebase (I tried reading about it, really I did - and I almost get it - but for now, I want the lazytimes without wrapping my head around using --rebase day-to-day </excuses>).
 
+We've since added fetching / pushing tags by default in `gp`, and also added a shorter version of `glog` at the end of the `gp` run. 
+
 I've also added the 'gwut' command, to print a list of the Git Convenience commands and symbols used at prompt - this may not work on everything as it relies on bash (I'm new...)
 
 # Convenient bits & bobs for Git
@@ -35,9 +37,10 @@ eval "$(curl -L https://raw.githubusercontent.com/kinworks/git-convenience-no-re
 * `gaa` - git add --all - Add all changes (including untracto staging</dd>
 * `gc "Message"` - Commit all changes (except untracked) message</dd>
 * `goops` - Add changes to previous commit &amp; edit comessage</dd>
-* `gp` - Pull then push - does not use --rebase and fetches / pushes tags too (read 'About this fork')
+* `gp` - Pull then push, runs `glogshort` after - does not use --rebase and fetches / pushes tags too (read 'About this fork');
 * `gup` - Pull (not via --rebase - see 'About this fork')
 * `glog` - Decorated &amp; graphed log
+* `glogshort` - `glog` but only the last 7 commits, excluding merges.
 * `gdiff` - A word-diff of changes
 * `gclean` - Compress &amp; garbage collect data store
 
