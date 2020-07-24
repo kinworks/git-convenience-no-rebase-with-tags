@@ -39,6 +39,7 @@ eval "$(curl -L https://raw.githubusercontent.com/kinworks/git-convenience-no-re
 * `goops` - Add changes to previous commit &amp; edit comessage</dd>
 * `gp` - Pull then push, runs `glogshort` after - does not use --rebase and fetches / pushes tags too (read 'About this fork');
 * `gup` - Pull (not via --rebase - see 'About this fork')
+* `gt` - List Git Tags, chronologically - from https://stackoverflow.com/a/18692754/3294217
 * `glog` - Decorated &amp; graphed log
 * `glogshort` - `glog` but only the last 7 commits, excluding merges.
 * `gdiff` - A word-diff of changes

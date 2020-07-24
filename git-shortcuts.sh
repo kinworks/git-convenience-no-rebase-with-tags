@@ -5,6 +5,7 @@ alias gclean='git gc --prune=now && git remote prune origin'
 alias glog='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias glogshort='git log --no-merges --max-count=7 --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 
+alias gt='git tag | xargs -I@ git log --format=format:"%ai @%n" -1 @ | sort | awk '{print $4}'' #https://stackoverflow.com/a/18692754/3294217
 
 if type git-up -t > /dev/null 2>&1; then
 	alias gup='git-up'
@@ -37,6 +38,7 @@ gc "Message" - Commit all changes (except untracked) message
 goops - Add changes to previous commit & edit comessage
 gp - Pull then push - (does not use --rebase, also fetches tags, also pushes tags)
 gup - Pull (not via --rebase)
+gt - List Git Tags, chronologically - from https://stackoverflow.com/a/18692754/3294217 
 glog - Decorated & graphed log
 gdiff - A word-diff of changes
 gclean - Compress & garbage collect data store
