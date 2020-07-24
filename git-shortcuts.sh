@@ -5,7 +5,7 @@ alias gclean='git gc --prune=now && git remote prune origin'
 alias glog='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias glogshort='git log --no-merges --max-count=7 --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 
-alias gt='git tag | xargs -I@ git log --format=format:"%ai @%n" -1 @ | sort | awk '{print $4}'' #https://stackoverflow.com/a/18692754/3294217
+alias gt='git tag | xargs -I@ git log --format=format:"%ai @%n" -1 @ | sort | awk "{print $4}"' #https://stackoverflow.com/a/18692754/3294217
 
 if type git-up -t > /dev/null 2>&1; then
 	alias gup='git-up'
